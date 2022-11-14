@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  background: #222;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+input::placeholder {
+  color: #ccc;
+  text-align: center;
+}
+.navbar input {
+  width: 200px;
+  height: 34px;
+  border: none;
+  border-radius: 10px;
+  background-color: #444;
+
+  color: #fff;
+}
+.navbar button {
+  color: #fff;
+  background-color: rgb(11, 58, 167);
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pokedex-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4rem;
+  gap: 1rem;
+}
+
+.pagination {
+  width: 90vw;
+}
+.pagination-btns {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+.pagination-btns button {
+  background: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.pokedex-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.pokecard {
+  width: 200px;
+  height: 300px;
+  border: none;
+  color: #fff;
+  text-shadow: #000 2px 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px #000, 4px 4px 4px #000;
+}
+
+.underline {
+  height: 4px;
+  width: 80px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.pokecard img {
+  width: 200px;
+}
+
+.typediv {
+  text-align: center;
+  width: 70px;
+  height: 20px;
+  background: transparent;
+  border: solid 2px #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #000;
+  margin-top: 5px;
+}
+
+#bug {
+  background-color: rgb(120, 56, 139);
+}
+
+#poison {
+  background: rgb(70, 12, 146);
+}
+
+#fire {
+  background: rgb(214, 100, 6);
+}
+
+#water {
+  background: rgb(10, 63, 148);
+}
+#grass {
+  background: rgb(8, 128, 0);
+}
+
+#normal {
+  background: rgb(67, 81, 97);
+}
+
+#fighting {
+  background: rgb(82, 68, 160);
+}
+
+#electric {
+  background-color: rgb(235, 176, 13);
+}
+
+#ground {
+  background: rgb(139, 46, 9);
+}
+
+#fairy {
+  background: rgb(145, 30, 124);
+}
+
+#psychic {
+  background-color: rgb(151, 31, 27);
+}
+
+#rock {
+  background: rgb(137, 124, 141);
+}
+
+#ice {
+  background: rgb(66, 124, 163);
+}
+
+#dragon {
+  background-color: rgb(206, 123, 7);
+}
+
+#steel {
+  background: rgb(116, 116, 116);
+}
+
+.notfound {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+@media (max-width:800px) {
+  
+ body{
+  overflow-x: hidden;
+ }
+
+  .pokedex-grid {
+    
+    grid-template-columns: repeat(1, 1fr);
+  
+  }
+
+  .pagination {
+    width: 30vw;
+  }
+
+  .pagination-btns{
+    justify-content: center;
+    flex-direction: row;
+    
+  }
+
+  .pagination-btns button{
+    font-size: 40px;
+  }
+
+}
