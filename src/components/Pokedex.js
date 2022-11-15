@@ -17,7 +17,8 @@ const Pokedex = ({
   };
 
   const gotoNextPage = () => {
-    if (page !== totalPages) setPage(page + 1);
+    if (page !== totalPages)
+      setPage(page + 1);
   };
 
   return (
@@ -26,7 +27,7 @@ const Pokedex = ({
         <Pagination
           gotoNextPage={gotoNextPage}
           gotoPrevPage={gotoPrevPage}
-          page={page}
+          page={page+1}
           totalPages={totalPages}
         />
         {loading ? (
