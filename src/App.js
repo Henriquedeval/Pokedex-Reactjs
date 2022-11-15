@@ -69,7 +69,7 @@ const App = () => {
         <Pokedex
           pokemons={pokemons}
           loading={loading}
-          page={1+page}
+          page={page}
           setPage={setPage}
           totalPages={totalPages}
           setTotalPages={setTotalPages}
