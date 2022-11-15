@@ -27,7 +27,7 @@ const Pokedex = ({
         <Pagination
           gotoNextPage={gotoNextPage}
           gotoPrevPage={gotoPrevPage}
-          page={page+1}
+          page={page}
           totalPages={totalPages}
         />
         {loading ? (
