@@ -11,7 +11,7 @@ const Pokedex = ({
   setTotalPages
 }) => {
   const gotoPrevPage = () => {
-    if (page >= 0) {
+    if (page > 0) {
       setPage(page - 1);
     }
   };
